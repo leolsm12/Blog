@@ -7,9 +7,13 @@
         srcset="">
     </div>
     <div class="big-card__title">
-        <h1><a href="https://www.google.com/search?q=nfl+bills+patriots&oq=nfl+bill+patrio&aqs=chrome.1.69i57j0i10i22i30j0i22i30l8.17414j0j4&sourceid=chrome&ie=UTF-8#sie=m;/g/11qbqx4dmf;6;/m/059yj;dt;fp;1;;;">{{cardTitle}}</a></h1>
+        <h1><a [routerLink]="['content', Id]">{{cardTitle}}</a></h1>
     </div>
     <div class="big-card__description">
-        <p>{{cardDescription}}</p>
+        <p>
+            <a [routerLink]="['content', Id]">
+            {{cardDescription}}
+            </a>
+        </p>
     </div>
 </div>
